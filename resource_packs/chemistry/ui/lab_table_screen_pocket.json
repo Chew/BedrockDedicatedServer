@@ -16,7 +16,7 @@
     "offset": [ 0, 8 ]
   },
 
-  "input_slot@common.pocket_ui_container_item": {
+  "input_slot@chem_common_pocket.pocket_ui_container_item": {
     "$item_collection_name": "compcreate_input",
     "$button_ref": "labtable_pocket.one_touch_button"
   },
@@ -75,8 +75,7 @@
           "$offset|default": [ 0, 0 ],
           "offset": "$offset",
           "$item_collection_name": "labtable_input",
-          "$item_renderer_size": [ 20, 20 ],
-          "$item_renderer_offset": [ 2, 2 ]
+          "$item_renderer_size": [ 20, 20 ]
         }
       }
     ]

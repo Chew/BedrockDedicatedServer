@@ -185,10 +185,6 @@
     ]
   },
 
-  "pocket_ui_container_item@common.pocket_ui_container_item": {
-    "size": [ 28, 28 ]
-  },
-
   "hotbar": {
     "type": "panel",
     "anchor_to": "top_middle",
@@ -204,11 +200,7 @@
               "hotbar_grid_template@common.hotbar_grid_template": {
                 "offset": [ 0, -3 ],
                 "size": [ 259, 28 ],
-                "$cell_image_size": [ 28, 28 ],
-                "$item_renderer_panel_size": [ 28, 28 ],
-                "$item_renderer_size": [ 24, 24 ],
-                "$item_renderer_offset": [ 3, 3 ],
-                "grid_item_template": "chem_common_pocket.pocket_ui_container_item",
+                "grid_item_template": "common.pocket_ui_container_item",
                 "$item_collection_name": "hotbar_items"
               }
             }
@@ -216,6 +208,13 @@
         }
       }
     ]
+  },
+
+  "pocket_ui_container_item@common.pocket_ui_container_item": {
+    "size": [ 24, 24 ],
+    "$cell_image_size": [ 24, 24 ],
+    "$item_renderer_panel_size": [ 20, 20 ],
+    "$item_renderer_size": [ 20, 20 ]
   },
 
   "inventory_grid": {
@@ -227,12 +226,8 @@
     "offset": [ 8, 2 ],
     "maximum_grid_items": 27,
     "collection_name": "inventory_items",
-    "grid_item_template": "common.pocket_ui_container_item",
-    "$item_collection_name": "inventory_items",
-    "$cell_image_size": [ 24, 24 ],
-    "$item_renderer_panel_size": [ 20, 20 ],
-    "$item_renderer_size": [ 20, 20 ],
-    "$item_renderer_offset": [ 2, 2 ]
+    "grid_item_template": "chem_common_pocket.pocket_ui_container_item",
+    "$item_collection_name": "inventory_items"
   },
 
   "inventory_content": {
