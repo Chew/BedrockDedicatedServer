@@ -1,13 +1,19 @@
 {
-  "type": "crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:crafting_table"
-    },
-    {
-      "item": "minecraft:cobblestone"
-    }
+  "type": "crafting_shaped",
+  "tags": [ "crafting_table" ],
+  "pattern": [
+    "||",
+    "##",
+    "##"
   ],
+  "key": {
+    "|": {
+      "item": "minecraft:iron_ingot"
+    },
+    "#": {
+      "item": "minecraft:planks"
+    }
+  },
   "result": [
     { "item": "minecraft:smithing_table" }
   ]

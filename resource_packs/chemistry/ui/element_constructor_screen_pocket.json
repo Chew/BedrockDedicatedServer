@@ -54,6 +54,9 @@
           "size": [ 23, 4 ],
           "anchor_from": "top_middle",
           "anchor_to": "top_middle",
+          "$slider_tts_header": "$particle_label",
+          "$slider_tts_text_value": "$particle_count_bind_name",
+
           // Override base controls so I can make the track contain the knob, even at min and max values
           "controls": [
             {

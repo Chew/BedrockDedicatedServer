@@ -1,5 +1,6 @@
 {
   "type": "crafting_shaped",
+  "tags": [ "crafting_table" ],
   "group": "stained_glass",
   "pattern": [
     "###",

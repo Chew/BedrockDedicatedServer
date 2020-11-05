@@ -1,14 +1,20 @@
 {
-  "type": "crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:crafting_table"
-    },
-    {
-      "item": "minecraft:paper"
-    }
+  "type": "crafting_shaped",
+  "tags": [ "crafting_table" ],
+  "pattern": [
+    "||",
+    "##",
+    "##"
   ],
-  "result": [
-    { "item": "minecraft:cartography_table" }
-  ]
+  "key": {
+    "|": {
+        "item": "minecraft:paper"
+    },
+    "#": {
+      "item": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "minecraft:cartography_table"
+  }
 }

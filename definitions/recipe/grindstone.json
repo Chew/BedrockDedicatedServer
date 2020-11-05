@@ -1,5 +1,6 @@
 {
   "type": "crafting_shaped",
+  "tags": [ "crafting_table" ],
   "pattern": [
     "|_|",
     "# #"
@@ -9,8 +10,7 @@
         "item": "minecraft:stick"
     },
     "#": {
-      "item": "minecraft:planks",
-      "data": 0
+      "item": "minecraft:planks"
     },
     "_": {
       "item": "minecraft:double_stone_slab4",

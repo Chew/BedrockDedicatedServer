@@ -136,6 +136,8 @@
           "$slider_direction": "vertical",
           "slider_inverted": true,
           "$progress_clip_direction": "down",
+          "$slider_tts_header": "$particle_label",
+          "$slider_tts_text_value": "$particle_count_bind_name",
 
           // Override base controls so I can make the track contain the knob, even at min and max values
           "controls": [
