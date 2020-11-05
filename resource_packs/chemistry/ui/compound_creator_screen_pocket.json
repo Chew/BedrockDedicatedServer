@@ -18,6 +18,7 @@
 
   "output_slot@chem_common_pocket.pocket_ui_container_item": {
     "$item_collection_name": "compcreate_output",
+    "$button_ref": "chem_common_pocket.output_slot_button",
     "offset": [ "0%", "30%" ]
   },
 

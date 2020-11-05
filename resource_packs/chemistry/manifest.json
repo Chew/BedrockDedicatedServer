@@ -1,11 +1,11 @@
 {
-  "format_version": 1,
+  "format_version": 2,
   "header": {
     "uuid": "0fba4063-dba1-4281-9b89-ff9390653530",
     "name": "pack.name",
     "version": [1, 0, 0],
     "description": "pack.description",
-    "min_engine_version": [1, 12, 1],
+    "min_engine_version": [1, 13, 0],
     "pack_scope": "world"
   },
   "modules": [
