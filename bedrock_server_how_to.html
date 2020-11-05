@@ -318,6 +318,7 @@
     <h2>Permissions</h2>
     <p>
         You can adjust player specific permissions by assigning them roles in the <code>permissions.json</code> that is placed in the same directory as the server executable. The file contains a simple JSON object with XUIDs and permissions. Valid permissions are: <code>operator</code>, <code>member</code>, <code>visitor</code>. Every player that connects with these accounts will be treated according to the set premission. If you change this file while the server is running, then run the command <code>permissions reload</code> to make sure that the server knows about your new change. You could also list the current permissions with <code>permissions list</code>. Note that <code>online-mode</code> needs to be enabled for this feature to work since xuid requires online verification of the user account. If a new player that is not in this list connects, the <code>default-player-permission-level</code> option will apply.
+		
     </p>
     <p>
         Example <code>permissions.json</code> file:
@@ -391,7 +392,7 @@
                 <td>Adds or removes a player from the whitelist file. The name parameter should be the Xbox Gamertag of the player you want to add or remove. You don't need to specify a XUID here, it will be resolved the first time the player connects.<br/><br/>See the Whitelist section for more information.</td>
             </tr>
             <tr>
-                <td>ops &lt;list | reload&gt;</td>
+                <td>permissions &lt;list | reload&gt;</td>
                 <td>
                     <p>
                         <code>list</code> prints the current used operator list.
@@ -400,7 +401,23 @@
                         <code>reload</code> makes the server reload the operator list from the ops file.
                     </p>
                     <p>
-                        See the Whitelist section for more information.
+                        See the Permissions section for more information.
+                    </p>
+                </td>
+            </tr>
+			<tr>
+                <td>op &lt;player&gt;</td>
+                <td>
+                    <p>
+                        Promote a player to <code>operator</code>. This will also persist in <code>permissions.json</code> if the player is authenticated to XBL. If <code>permissions.json</code> is missing it will be created. If the player is not connected to XBL, the player is promoted for the current server session and it will not be persisted on disk. Defualt server permission level will be assigned to the player after a server restart.
+                    </p>
+                </td>
+            </tr>
+			<tr>
+                <td>deop &lt;player&gt;</td>
+                <td>
+                    <p>
+                        Demote a player to <code>member</code>. This will also persist in <code>permissions.json</code> if the player is authenticated to XBL. If <code>permissions.json</code> is missing it will be created.
                     </p>
                 </td>
             </tr>
