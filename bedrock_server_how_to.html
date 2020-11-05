@@ -43,10 +43,16 @@
         This is an early release (alpha) which we don't fully support yet. It might contain severe issues and we could stop supporting it at any time.
     </p>
 
+    <h2>Recommended Hardware</h2>
+    <p>
+        We recommend running the Bedrock Minecraft Server on 64-bit Intel or AMD processor machines with at least 2 cores and 1 Gb RAM.
+    </p>
+
     <h2>Platforms</h2>
 
     <h3>Linux</h3>
     <p>
+        The Linux version of the Bedrock Server requires Ubuntu 18 or later. Other distributions are not supported. 
         Unzip the container file into an empty folder. Start the server with the following command:
     </p>
     <blockquote>
@@ -55,6 +61,11 @@
 
     <h3>Windows</h3>
     <p>
+        The Windows version of the Bedrock Server requires either:
+        <ul type="disc">
+            <li>Windows 10 version 1703 or later</li>
+            <li>Windows Server 2016 or later</li>
+        </ul>
         Unzip the container file into an empty folder. Start the server by executing the <code>bedrock_server.exe</code> file.
     </p>
     <p>
@@ -217,25 +228,59 @@
                 <td>Always</td>
                 <td>Enables logging content errors to a file.</td>
             </tr>
+            <tr>
+                <td>compression-threshold</td>
+                <td>An integer in the range [0-65535]</td>
+                <td>1</td>
+                <td>Always</td>
+                <td>Determines the smallest size of raw network payload to compress. Can be used to experiment with CPU-bandwidth tradeoffs.</td>
+            </tr>
+            <tr>
+                <td>server-authoritative-movement</td>
+                <td>true, false</td>
+                <td>true</td>
+                <td>Always</td>
+                <td>Enables server authoritative movement. If true, the server will replay local user input on
+                    the server and send down corrections when the client's position doesn't match the server's.
+                    Corrections will only happen if correct-player-movement is set to true.</td>
+            </tr>
+            <tr>
+                <td>player-movement-score-threshold</td>
+                <td>Any positive integer</td>
+                <td>20</td>
+                <td>Always</td>
+                <td>The number of incongruent time intervals needed before abnormal behavior is reported.
+                    In other words, how many times a player does something suspicious before we take action.
+                    Only relevant for server-authoritative-movement.</td>
+            </tr>            
+            <tr>
+                <td>player-movement-distance-threshold</td>
+                <td>Any positive float</td>
+                <td>0.3</td>
+                <td>Always</td>
+                <td>The difference between server and client positions that needs to be exceeded before abnormal behavior is registered.
+                    Only relevant for server-authoritative-movement.</td>
+            </tr>            
+            <tr>
+                <td>player-movement-duration-threshold-in-ms</td>
+                <td>Any positive integer</td>
+                <td>500</td>
+                <td>Always</td>
+                <td>The duration of time the server and client positions can be out of sync (as defined by player-movement-distance-threshold)
+                    before the abnormal movement score is incremented. This value is defined in milliseconds.
+                    Only relevant for server-authoritative-movement.</td>
+            </tr>         
+            <tr>
+                <td>correct-player-movement</td>
+                <td>true, false</td>
+                <td>false</td>
+                <td>Always</td>
+                <td>If true, the client position will get corrected to the server position if the movement score exceeds the threshold.
+                    Only relevant for server-authoritative-movement.
+                    We don't recommend enabling this as of yet; work is still in progress.</td>
+            </tr>           
         </tbody>
     </table>
-
-    <h3>Example server.properties file</h3>
-    <blockquote>
-        server-name=Dedicated Server<br />
-        gamemode=survival<br />
-        difficulty=easy<br />
-        allow-cheats=false<br />
-        max-players=10<br />
-        online-mode=true<br />
-        white-list=false<br />
-        server-port=19132<br />
-        server-portv6=19133<br />
-        view-distance=10<br />
-        tick-distance=4<br />
-        player-idle-timeout=30<br />
-        max-threads=8
-    </blockquote>
 
     <h2>Folders</h2>
     <p>
@@ -269,7 +314,7 @@
 
     <h2>Whitelist</h2>
     <p>
-        If the <code>white-list</code> property is enabled in <code>server.properties</code> then the server will only allow selected users to connect. To allow a user to connect you need to know their Xbox Live Gamertag. The easiest way to add a user to the whitelist is to use the command <code>whitelist add &lt;Gamertag&gt;</code> (eg: <code>whitelist add ExampleName</code>). Note: If there is a white-space in the Gamertag you need to enclose it with double quates: <code>whitelist add "Example Name"</code>
+        If the <code>white-list</code> property is enabled in <code>server.properties</code> then the server will only allow selected users to connect. To allow a user to connect you need to know their Xbox Live Gamertag. The easiest way to add a user to the whitelist is to use the command <code>whitelist add &lt;Gamertag&gt;</code> (eg: <code>whitelist add ExampleName</code>). Note: If there is a white-space in the Gamertag you need to enclose it with double quotes: <code>whitelist add "Example Name"</code>
     </p>
     <p>
         If you later want to remove someone from the list you can use the command <code>whitelist remove &lt;Gamertag&gt;</code>.
@@ -399,7 +444,7 @@
                 <td>Adds or removes a player from the whitelist file. The name parameter should be the Xbox Gamertag of the player you want to add or remove. You don't need to specify a XUID here, it will be resolved the first time the player connects.<br/><br/>See the Whitelist section for more information.</td>
             </tr>
             <tr>
-                <td>permissions &lt;list | reload&gt;</td>
+                <td>permission &lt;list | reload&gt;</td>
                 <td>
                     <p>
                         <code>list</code> prints the current used operator list.

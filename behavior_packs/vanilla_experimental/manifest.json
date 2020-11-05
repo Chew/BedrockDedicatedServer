@@ -5,7 +5,7 @@
         "name": "resourcePack.vanilla_server.experimental.name",
         "uuid": "47db1a44-55b4-4d4e-aa0f-d5de6206a0fd",
         "version": [0, 0, 1],
-        "min_engine_version": [ 1, 13, 0 ]
+        "min_engine_version": [ 1, 14, 0 ]
     },
     "modules": [
         {
