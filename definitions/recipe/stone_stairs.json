@@ -7,11 +7,12 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:cobblestone"
+      "item": "minecraft:stone",
+      "data": 0
     }
   },
   "result": {
-    "item": "minecraft:stone_stairs",
+    "item": "minecraft:normal_stone_stairs",
     "count": 4
   }
 }
