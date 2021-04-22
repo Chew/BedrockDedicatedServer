@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake
+CMAKE_COMMAND = /home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake
 
 # The command to remove a file.
-RM = /home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake -E rm -f
+RM = /home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mcbuild/VstsAgent/work/158/s
+CMAKE_SOURCE_DIR = /home/mcbuild/VstsAgent/work/143/s
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public
+CMAKE_BINARY_DIR = /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,31 +78,31 @@ CMAKE_BINARY_DIR = /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -113,13 +113,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake -P cmake_install.cmake
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cmake -P cmake_install.cmake
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -135,7 +135,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && /home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cpack --config ./CPackConfig.cmake
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && /home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -146,7 +146,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && /home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/cpack --config ./CPackSourceConfig.cmake /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public/CPackSourceConfig.cmake
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && /home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/cpack --config ./CPackSourceConfig.cmake /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -157,7 +157,7 @@ package_source/fast: package_source
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/mcbuild/VstsAgent/work/158/b/cmake-3.19.2-Linux-x86_64/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/mcbuild/VstsAgent/work/143/b/cmake-3.19.2-Linux-x86_64/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -167,14 +167,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(CMAKE_COMMAND) -E cmake_progress_start /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public/CMakeFiles /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public/handheld/src-server//CMakeFiles/progress.marks
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public/CMakeFiles 0
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(CMAKE_COMMAND) -E cmake_progress_start /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public/CMakeFiles /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public/handheld/src-server//CMakeFiles/progress.marks
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/clean
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/clean
 .PHONY : clean
 
 # The main clean target
@@ -184,22 +184,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/preinstall
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/preinstall
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 handheld/src-server/CMakeFiles/Minecraft.Server.dir/rule:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/CMakeFiles/Minecraft.Server.dir/rule
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 handheld/src-server/CMakeFiles/Minecraft.Server.dir/rule
 .PHONY : handheld/src-server/CMakeFiles/Minecraft.Server.dir/rule
 
 # Convenience name for target.
@@ -209,7 +209,7 @@ Minecraft.Server: handheld/src-server/CMakeFiles/Minecraft.Server.dir/rule
 
 # fast build rule for target.
 Minecraft.Server/fast:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/build
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/build
 .PHONY : Minecraft.Server/fast
 
 __/src-client/common/client/renderer/block/BlockGraphics.o: __/src-client/common/client/renderer/block/BlockGraphics.cpp.o
@@ -218,7 +218,7 @@ __/src-client/common/client/renderer/block/BlockGraphics.o: __/src-client/common
 
 # target to build an object file
 __/src-client/common/client/renderer/block/BlockGraphics.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/block/BlockGraphics.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/block/BlockGraphics.cpp.o
 .PHONY : __/src-client/common/client/renderer/block/BlockGraphics.cpp.o
 
 __/src-client/common/client/renderer/block/BlockGraphics.i: __/src-client/common/client/renderer/block/BlockGraphics.cpp.i
@@ -227,7 +227,7 @@ __/src-client/common/client/renderer/block/BlockGraphics.i: __/src-client/common
 
 # target to preprocess a source file
 __/src-client/common/client/renderer/block/BlockGraphics.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/block/BlockGraphics.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/block/BlockGraphics.cpp.i
 .PHONY : __/src-client/common/client/renderer/block/BlockGraphics.cpp.i
 
 __/src-client/common/client/renderer/block/BlockGraphics.s: __/src-client/common/client/renderer/block/BlockGraphics.cpp.s
@@ -236,7 +236,7 @@ __/src-client/common/client/renderer/block/BlockGraphics.s: __/src-client/common
 
 # target to generate assembly for a file
 __/src-client/common/client/renderer/block/BlockGraphics.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/block/BlockGraphics.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/block/BlockGraphics.cpp.s
 .PHONY : __/src-client/common/client/renderer/block/BlockGraphics.cpp.s
 
 __/src-client/common/client/renderer/texture/AtlasItemManager.o: __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.o
@@ -245,7 +245,7 @@ __/src-client/common/client/renderer/texture/AtlasItemManager.o: __/src-client/c
 
 # target to build an object file
 __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/AtlasItemManager.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/AtlasItemManager.cpp.o
 .PHONY : __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.o
 
 __/src-client/common/client/renderer/texture/AtlasItemManager.i: __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.i
@@ -254,7 +254,7 @@ __/src-client/common/client/renderer/texture/AtlasItemManager.i: __/src-client/c
 
 # target to preprocess a source file
 __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/AtlasItemManager.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/AtlasItemManager.cpp.i
 .PHONY : __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.i
 
 __/src-client/common/client/renderer/texture/AtlasItemManager.s: __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.s
@@ -263,7 +263,7 @@ __/src-client/common/client/renderer/texture/AtlasItemManager.s: __/src-client/c
 
 # target to generate assembly for a file
 __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/AtlasItemManager.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/AtlasItemManager.cpp.s
 .PHONY : __/src-client/common/client/renderer/texture/AtlasItemManager.cpp.s
 
 __/src-client/common/client/renderer/texture/IsotropicFaceData.o: __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.o
@@ -272,7 +272,7 @@ __/src-client/common/client/renderer/texture/IsotropicFaceData.o: __/src-client/
 
 # target to build an object file
 __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.o
 .PHONY : __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.o
 
 __/src-client/common/client/renderer/texture/IsotropicFaceData.i: __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.i
@@ -281,7 +281,7 @@ __/src-client/common/client/renderer/texture/IsotropicFaceData.i: __/src-client/
 
 # target to preprocess a source file
 __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.i
 .PHONY : __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.i
 
 __/src-client/common/client/renderer/texture/IsotropicFaceData.s: __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.s
@@ -290,7 +290,7 @@ __/src-client/common/client/renderer/texture/IsotropicFaceData.s: __/src-client/
 
 # target to generate assembly for a file
 __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.s
 .PHONY : __/src-client/common/client/renderer/texture/IsotropicFaceData.cpp.s
 
 __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.o: __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.o
@@ -299,7 +299,7 @@ __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.o: __/src-cl
 
 # target to build an object file
 __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.o
 .PHONY : __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.o
 
 __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.i: __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.i
@@ -308,7 +308,7 @@ __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.i: __/src-cl
 
 # target to preprocess a source file
 __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.i
 .PHONY : __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.i
 
 __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.s: __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.s
@@ -317,7 +317,7 @@ __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.s: __/src-cl
 
 # target to generate assembly for a file
 __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.s
 .PHONY : __/src-client/common/client/renderer/texture/TextureUVCoordinateSet.cpp.s
 
 __/src-client/common/client/social/GameConnectionInfo.o: __/src-client/common/client/social/GameConnectionInfo.cpp.o
@@ -326,7 +326,7 @@ __/src-client/common/client/social/GameConnectionInfo.o: __/src-client/common/cl
 
 # target to build an object file
 __/src-client/common/client/social/GameConnectionInfo.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/social/GameConnectionInfo.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/social/GameConnectionInfo.cpp.o
 .PHONY : __/src-client/common/client/social/GameConnectionInfo.cpp.o
 
 __/src-client/common/client/social/GameConnectionInfo.i: __/src-client/common/client/social/GameConnectionInfo.cpp.i
@@ -335,7 +335,7 @@ __/src-client/common/client/social/GameConnectionInfo.i: __/src-client/common/cl
 
 # target to preprocess a source file
 __/src-client/common/client/social/GameConnectionInfo.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/social/GameConnectionInfo.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/social/GameConnectionInfo.cpp.i
 .PHONY : __/src-client/common/client/social/GameConnectionInfo.cpp.i
 
 __/src-client/common/client/social/GameConnectionInfo.s: __/src-client/common/client/social/GameConnectionInfo.cpp.s
@@ -344,7 +344,7 @@ __/src-client/common/client/social/GameConnectionInfo.s: __/src-client/common/cl
 
 # target to generate assembly for a file
 __/src-client/common/client/social/GameConnectionInfo.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/social/GameConnectionInfo.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/__/src-client/common/client/social/GameConnectionInfo.cpp.s
 .PHONY : __/src-client/common/client/social/GameConnectionInfo.cpp.s
 
 common/ConsoleInputReader.o: common/ConsoleInputReader.cpp.o
@@ -353,7 +353,7 @@ common/ConsoleInputReader.o: common/ConsoleInputReader.cpp.o
 
 # target to build an object file
 common/ConsoleInputReader.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/ConsoleInputReader.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/ConsoleInputReader.cpp.o
 .PHONY : common/ConsoleInputReader.cpp.o
 
 common/ConsoleInputReader.i: common/ConsoleInputReader.cpp.i
@@ -362,7 +362,7 @@ common/ConsoleInputReader.i: common/ConsoleInputReader.cpp.i
 
 # target to preprocess a source file
 common/ConsoleInputReader.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/ConsoleInputReader.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/ConsoleInputReader.cpp.i
 .PHONY : common/ConsoleInputReader.cpp.i
 
 common/ConsoleInputReader.s: common/ConsoleInputReader.cpp.s
@@ -371,7 +371,7 @@ common/ConsoleInputReader.s: common/ConsoleInputReader.cpp.s
 
 # target to generate assembly for a file
 common/ConsoleInputReader.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/ConsoleInputReader.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/ConsoleInputReader.cpp.s
 .PHONY : common/ConsoleInputReader.cpp.s
 
 common/DedicatedServer.o: common/DedicatedServer.cpp.o
@@ -380,7 +380,7 @@ common/DedicatedServer.o: common/DedicatedServer.cpp.o
 
 # target to build an object file
 common/DedicatedServer.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServer.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServer.cpp.o
 .PHONY : common/DedicatedServer.cpp.o
 
 common/DedicatedServer.i: common/DedicatedServer.cpp.i
@@ -389,7 +389,7 @@ common/DedicatedServer.i: common/DedicatedServer.cpp.i
 
 # target to preprocess a source file
 common/DedicatedServer.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServer.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServer.cpp.i
 .PHONY : common/DedicatedServer.cpp.i
 
 common/DedicatedServer.s: common/DedicatedServer.cpp.s
@@ -398,7 +398,7 @@ common/DedicatedServer.s: common/DedicatedServer.cpp.s
 
 # target to generate assembly for a file
 common/DedicatedServer.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServer.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServer.cpp.s
 .PHONY : common/DedicatedServer.cpp.s
 
 common/DedicatedServerCommands.o: common/DedicatedServerCommands.cpp.o
@@ -407,7 +407,7 @@ common/DedicatedServerCommands.o: common/DedicatedServerCommands.cpp.o
 
 # target to build an object file
 common/DedicatedServerCommands.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerCommands.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerCommands.cpp.o
 .PHONY : common/DedicatedServerCommands.cpp.o
 
 common/DedicatedServerCommands.i: common/DedicatedServerCommands.cpp.i
@@ -416,7 +416,7 @@ common/DedicatedServerCommands.i: common/DedicatedServerCommands.cpp.i
 
 # target to preprocess a source file
 common/DedicatedServerCommands.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerCommands.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerCommands.cpp.i
 .PHONY : common/DedicatedServerCommands.cpp.i
 
 common/DedicatedServerCommands.s: common/DedicatedServerCommands.cpp.s
@@ -425,7 +425,7 @@ common/DedicatedServerCommands.s: common/DedicatedServerCommands.cpp.s
 
 # target to generate assembly for a file
 common/DedicatedServerCommands.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerCommands.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerCommands.cpp.s
 .PHONY : common/DedicatedServerCommands.cpp.s
 
 common/DedicatedServerGameTestRunner.o: common/DedicatedServerGameTestRunner.cpp.o
@@ -434,7 +434,7 @@ common/DedicatedServerGameTestRunner.o: common/DedicatedServerGameTestRunner.cpp
 
 # target to build an object file
 common/DedicatedServerGameTestRunner.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerGameTestRunner.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerGameTestRunner.cpp.o
 .PHONY : common/DedicatedServerGameTestRunner.cpp.o
 
 common/DedicatedServerGameTestRunner.i: common/DedicatedServerGameTestRunner.cpp.i
@@ -443,7 +443,7 @@ common/DedicatedServerGameTestRunner.i: common/DedicatedServerGameTestRunner.cpp
 
 # target to preprocess a source file
 common/DedicatedServerGameTestRunner.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerGameTestRunner.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerGameTestRunner.cpp.i
 .PHONY : common/DedicatedServerGameTestRunner.cpp.i
 
 common/DedicatedServerGameTestRunner.s: common/DedicatedServerGameTestRunner.cpp.s
@@ -452,7 +452,7 @@ common/DedicatedServerGameTestRunner.s: common/DedicatedServerGameTestRunner.cpp
 
 # target to generate assembly for a file
 common/DedicatedServerGameTestRunner.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerGameTestRunner.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/DedicatedServerGameTestRunner.cpp.s
 .PHONY : common/DedicatedServerGameTestRunner.cpp.s
 
 common/PropertiesSettings.o: common/PropertiesSettings.cpp.o
@@ -461,7 +461,7 @@ common/PropertiesSettings.o: common/PropertiesSettings.cpp.o
 
 # target to build an object file
 common/PropertiesSettings.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/PropertiesSettings.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/PropertiesSettings.cpp.o
 .PHONY : common/PropertiesSettings.cpp.o
 
 common/PropertiesSettings.i: common/PropertiesSettings.cpp.i
@@ -470,7 +470,7 @@ common/PropertiesSettings.i: common/PropertiesSettings.cpp.i
 
 # target to preprocess a source file
 common/PropertiesSettings.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/PropertiesSettings.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/PropertiesSettings.cpp.i
 .PHONY : common/PropertiesSettings.cpp.i
 
 common/PropertiesSettings.s: common/PropertiesSettings.cpp.s
@@ -479,7 +479,7 @@ common/PropertiesSettings.s: common/PropertiesSettings.cpp.s
 
 # target to generate assembly for a file
 common/PropertiesSettings.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/PropertiesSettings.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/PropertiesSettings.cpp.s
 .PHONY : common/PropertiesSettings.cpp.s
 
 common/TestConfig.o: common/TestConfig.cpp.o
@@ -488,7 +488,7 @@ common/TestConfig.o: common/TestConfig.cpp.o
 
 # target to build an object file
 common/TestConfig.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestConfig.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestConfig.cpp.o
 .PHONY : common/TestConfig.cpp.o
 
 common/TestConfig.i: common/TestConfig.cpp.i
@@ -497,7 +497,7 @@ common/TestConfig.i: common/TestConfig.cpp.i
 
 # target to preprocess a source file
 common/TestConfig.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestConfig.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestConfig.cpp.i
 .PHONY : common/TestConfig.cpp.i
 
 common/TestConfig.s: common/TestConfig.cpp.s
@@ -506,7 +506,7 @@ common/TestConfig.s: common/TestConfig.cpp.s
 
 # target to generate assembly for a file
 common/TestConfig.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestConfig.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestConfig.cpp.s
 .PHONY : common/TestConfig.cpp.s
 
 common/TestDedicatedServerCommands.o: common/TestDedicatedServerCommands.cpp.o
@@ -515,7 +515,7 @@ common/TestDedicatedServerCommands.o: common/TestDedicatedServerCommands.cpp.o
 
 # target to build an object file
 common/TestDedicatedServerCommands.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestDedicatedServerCommands.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestDedicatedServerCommands.cpp.o
 .PHONY : common/TestDedicatedServerCommands.cpp.o
 
 common/TestDedicatedServerCommands.i: common/TestDedicatedServerCommands.cpp.i
@@ -524,7 +524,7 @@ common/TestDedicatedServerCommands.i: common/TestDedicatedServerCommands.cpp.i
 
 # target to preprocess a source file
 common/TestDedicatedServerCommands.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestDedicatedServerCommands.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestDedicatedServerCommands.cpp.i
 .PHONY : common/TestDedicatedServerCommands.cpp.i
 
 common/TestDedicatedServerCommands.s: common/TestDedicatedServerCommands.cpp.s
@@ -533,7 +533,7 @@ common/TestDedicatedServerCommands.s: common/TestDedicatedServerCommands.cpp.s
 
 # target to generate assembly for a file
 common/TestDedicatedServerCommands.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestDedicatedServerCommands.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/TestDedicatedServerCommands.cpp.s
 .PHONY : common/TestDedicatedServerCommands.cpp.s
 
 common/VanillaGameModuleDedicatedServer.o: common/VanillaGameModuleDedicatedServer.cpp.o
@@ -542,7 +542,7 @@ common/VanillaGameModuleDedicatedServer.o: common/VanillaGameModuleDedicatedServ
 
 # target to build an object file
 common/VanillaGameModuleDedicatedServer.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/VanillaGameModuleDedicatedServer.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/VanillaGameModuleDedicatedServer.cpp.o
 .PHONY : common/VanillaGameModuleDedicatedServer.cpp.o
 
 common/VanillaGameModuleDedicatedServer.i: common/VanillaGameModuleDedicatedServer.cpp.i
@@ -551,7 +551,7 @@ common/VanillaGameModuleDedicatedServer.i: common/VanillaGameModuleDedicatedServ
 
 # target to preprocess a source file
 common/VanillaGameModuleDedicatedServer.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/VanillaGameModuleDedicatedServer.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/VanillaGameModuleDedicatedServer.cpp.i
 .PHONY : common/VanillaGameModuleDedicatedServer.cpp.i
 
 common/VanillaGameModuleDedicatedServer.s: common/VanillaGameModuleDedicatedServer.cpp.s
@@ -560,7 +560,7 @@ common/VanillaGameModuleDedicatedServer.s: common/VanillaGameModuleDedicatedServ
 
 # target to generate assembly for a file
 common/VanillaGameModuleDedicatedServer.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/VanillaGameModuleDedicatedServer.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/VanillaGameModuleDedicatedServer.cpp.s
 .PHONY : common/VanillaGameModuleDedicatedServer.cpp.s
 
 common/commands/ChangeSettingCommand.o: common/commands/ChangeSettingCommand.cpp.o
@@ -569,7 +569,7 @@ common/commands/ChangeSettingCommand.o: common/commands/ChangeSettingCommand.cpp
 
 # target to build an object file
 common/commands/ChangeSettingCommand.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ChangeSettingCommand.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ChangeSettingCommand.cpp.o
 .PHONY : common/commands/ChangeSettingCommand.cpp.o
 
 common/commands/ChangeSettingCommand.i: common/commands/ChangeSettingCommand.cpp.i
@@ -578,7 +578,7 @@ common/commands/ChangeSettingCommand.i: common/commands/ChangeSettingCommand.cpp
 
 # target to preprocess a source file
 common/commands/ChangeSettingCommand.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ChangeSettingCommand.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ChangeSettingCommand.cpp.i
 .PHONY : common/commands/ChangeSettingCommand.cpp.i
 
 common/commands/ChangeSettingCommand.s: common/commands/ChangeSettingCommand.cpp.s
@@ -587,7 +587,7 @@ common/commands/ChangeSettingCommand.s: common/commands/ChangeSettingCommand.cpp
 
 # target to generate assembly for a file
 common/commands/ChangeSettingCommand.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ChangeSettingCommand.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ChangeSettingCommand.cpp.s
 .PHONY : common/commands/ChangeSettingCommand.cpp.s
 
 common/commands/DedicatedWSServerCommand.o: common/commands/DedicatedWSServerCommand.cpp.o
@@ -596,7 +596,7 @@ common/commands/DedicatedWSServerCommand.o: common/commands/DedicatedWSServerCom
 
 # target to build an object file
 common/commands/DedicatedWSServerCommand.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/DedicatedWSServerCommand.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/DedicatedWSServerCommand.cpp.o
 .PHONY : common/commands/DedicatedWSServerCommand.cpp.o
 
 common/commands/DedicatedWSServerCommand.i: common/commands/DedicatedWSServerCommand.cpp.i
@@ -605,7 +605,7 @@ common/commands/DedicatedWSServerCommand.i: common/commands/DedicatedWSServerCom
 
 # target to preprocess a source file
 common/commands/DedicatedWSServerCommand.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/DedicatedWSServerCommand.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/DedicatedWSServerCommand.cpp.i
 .PHONY : common/commands/DedicatedWSServerCommand.cpp.i
 
 common/commands/DedicatedWSServerCommand.s: common/commands/DedicatedWSServerCommand.cpp.s
@@ -614,7 +614,7 @@ common/commands/DedicatedWSServerCommand.s: common/commands/DedicatedWSServerCom
 
 # target to generate assembly for a file
 common/commands/DedicatedWSServerCommand.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/DedicatedWSServerCommand.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/DedicatedWSServerCommand.cpp.s
 .PHONY : common/commands/DedicatedWSServerCommand.cpp.s
 
 common/commands/GetEduServerInfoCommand.o: common/commands/GetEduServerInfoCommand.cpp.o
@@ -623,7 +623,7 @@ common/commands/GetEduServerInfoCommand.o: common/commands/GetEduServerInfoComma
 
 # target to build an object file
 common/commands/GetEduServerInfoCommand.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/GetEduServerInfoCommand.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/GetEduServerInfoCommand.cpp.o
 .PHONY : common/commands/GetEduServerInfoCommand.cpp.o
 
 common/commands/GetEduServerInfoCommand.i: common/commands/GetEduServerInfoCommand.cpp.i
@@ -632,7 +632,7 @@ common/commands/GetEduServerInfoCommand.i: common/commands/GetEduServerInfoComma
 
 # target to preprocess a source file
 common/commands/GetEduServerInfoCommand.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/GetEduServerInfoCommand.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/GetEduServerInfoCommand.cpp.i
 .PHONY : common/commands/GetEduServerInfoCommand.cpp.i
 
 common/commands/GetEduServerInfoCommand.s: common/commands/GetEduServerInfoCommand.cpp.s
@@ -641,7 +641,7 @@ common/commands/GetEduServerInfoCommand.s: common/commands/GetEduServerInfoComma
 
 # target to generate assembly for a file
 common/commands/GetEduServerInfoCommand.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/GetEduServerInfoCommand.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/GetEduServerInfoCommand.cpp.s
 .PHONY : common/commands/GetEduServerInfoCommand.cpp.s
 
 common/commands/SaveCommand.o: common/commands/SaveCommand.cpp.o
@@ -650,7 +650,7 @@ common/commands/SaveCommand.o: common/commands/SaveCommand.cpp.o
 
 # target to build an object file
 common/commands/SaveCommand.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/SaveCommand.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/SaveCommand.cpp.o
 .PHONY : common/commands/SaveCommand.cpp.o
 
 common/commands/SaveCommand.i: common/commands/SaveCommand.cpp.i
@@ -659,7 +659,7 @@ common/commands/SaveCommand.i: common/commands/SaveCommand.cpp.i
 
 # target to preprocess a source file
 common/commands/SaveCommand.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/SaveCommand.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/SaveCommand.cpp.i
 .PHONY : common/commands/SaveCommand.cpp.i
 
 common/commands/SaveCommand.s: common/commands/SaveCommand.cpp.s
@@ -668,7 +668,7 @@ common/commands/SaveCommand.s: common/commands/SaveCommand.cpp.s
 
 # target to generate assembly for a file
 common/commands/SaveCommand.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/SaveCommand.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/SaveCommand.cpp.s
 .PHONY : common/commands/SaveCommand.cpp.s
 
 common/commands/ServerLogCommand.o: common/commands/ServerLogCommand.cpp.o
@@ -677,7 +677,7 @@ common/commands/ServerLogCommand.o: common/commands/ServerLogCommand.cpp.o
 
 # target to build an object file
 common/commands/ServerLogCommand.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ServerLogCommand.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ServerLogCommand.cpp.o
 .PHONY : common/commands/ServerLogCommand.cpp.o
 
 common/commands/ServerLogCommand.i: common/commands/ServerLogCommand.cpp.i
@@ -686,7 +686,7 @@ common/commands/ServerLogCommand.i: common/commands/ServerLogCommand.cpp.i
 
 # target to preprocess a source file
 common/commands/ServerLogCommand.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ServerLogCommand.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ServerLogCommand.cpp.i
 .PHONY : common/commands/ServerLogCommand.cpp.i
 
 common/commands/ServerLogCommand.s: common/commands/ServerLogCommand.cpp.s
@@ -695,7 +695,7 @@ common/commands/ServerLogCommand.s: common/commands/ServerLogCommand.cpp.s
 
 # target to generate assembly for a file
 common/commands/ServerLogCommand.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ServerLogCommand.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/ServerLogCommand.cpp.s
 .PHONY : common/commands/ServerLogCommand.cpp.s
 
 common/commands/StopCommand.o: common/commands/StopCommand.cpp.o
@@ -704,7 +704,7 @@ common/commands/StopCommand.o: common/commands/StopCommand.cpp.o
 
 # target to build an object file
 common/commands/StopCommand.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/StopCommand.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/StopCommand.cpp.o
 .PHONY : common/commands/StopCommand.cpp.o
 
 common/commands/StopCommand.i: common/commands/StopCommand.cpp.i
@@ -713,7 +713,7 @@ common/commands/StopCommand.i: common/commands/StopCommand.cpp.i
 
 # target to preprocess a source file
 common/commands/StopCommand.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/StopCommand.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/StopCommand.cpp.i
 .PHONY : common/commands/StopCommand.cpp.i
 
 common/commands/StopCommand.s: common/commands/StopCommand.cpp.s
@@ -722,7 +722,7 @@ common/commands/StopCommand.s: common/commands/StopCommand.cpp.s
 
 # target to generate assembly for a file
 common/commands/StopCommand.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/StopCommand.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/StopCommand.cpp.s
 .PHONY : common/commands/StopCommand.cpp.s
 
 common/commands/WhitelistCommand.o: common/commands/WhitelistCommand.cpp.o
@@ -731,7 +731,7 @@ common/commands/WhitelistCommand.o: common/commands/WhitelistCommand.cpp.o
 
 # target to build an object file
 common/commands/WhitelistCommand.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/WhitelistCommand.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/WhitelistCommand.cpp.o
 .PHONY : common/commands/WhitelistCommand.cpp.o
 
 common/commands/WhitelistCommand.i: common/commands/WhitelistCommand.cpp.i
@@ -740,7 +740,7 @@ common/commands/WhitelistCommand.i: common/commands/WhitelistCommand.cpp.i
 
 # target to preprocess a source file
 common/commands/WhitelistCommand.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/WhitelistCommand.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/WhitelistCommand.cpp.i
 .PHONY : common/commands/WhitelistCommand.cpp.i
 
 common/commands/WhitelistCommand.s: common/commands/WhitelistCommand.cpp.s
@@ -749,7 +749,7 @@ common/commands/WhitelistCommand.s: common/commands/WhitelistCommand.cpp.s
 
 # target to generate assembly for a file
 common/commands/WhitelistCommand.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/WhitelistCommand.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/common/commands/WhitelistCommand.cpp.s
 .PHONY : common/commands/WhitelistCommand.cpp.s
 
 linux/ServerMetricsImpl.o: linux/ServerMetricsImpl.cpp.o
@@ -758,7 +758,7 @@ linux/ServerMetricsImpl.o: linux/ServerMetricsImpl.cpp.o
 
 # target to build an object file
 linux/ServerMetricsImpl.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/ServerMetricsImpl.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/ServerMetricsImpl.cpp.o
 .PHONY : linux/ServerMetricsImpl.cpp.o
 
 linux/ServerMetricsImpl.i: linux/ServerMetricsImpl.cpp.i
@@ -767,7 +767,7 @@ linux/ServerMetricsImpl.i: linux/ServerMetricsImpl.cpp.i
 
 # target to preprocess a source file
 linux/ServerMetricsImpl.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/ServerMetricsImpl.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/ServerMetricsImpl.cpp.i
 .PHONY : linux/ServerMetricsImpl.cpp.i
 
 linux/ServerMetricsImpl.s: linux/ServerMetricsImpl.cpp.s
@@ -776,7 +776,7 @@ linux/ServerMetricsImpl.s: linux/ServerMetricsImpl.cpp.s
 
 # target to generate assembly for a file
 linux/ServerMetricsImpl.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/ServerMetricsImpl.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/ServerMetricsImpl.cpp.s
 .PHONY : linux/ServerMetricsImpl.cpp.s
 
 linux/clacks-server/ClacksServer.o: linux/clacks-server/ClacksServer.cpp.o
@@ -785,7 +785,7 @@ linux/clacks-server/ClacksServer.o: linux/clacks-server/ClacksServer.cpp.o
 
 # target to build an object file
 linux/clacks-server/ClacksServer.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/clacks-server/ClacksServer.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/clacks-server/ClacksServer.cpp.o
 .PHONY : linux/clacks-server/ClacksServer.cpp.o
 
 linux/clacks-server/ClacksServer.i: linux/clacks-server/ClacksServer.cpp.i
@@ -794,7 +794,7 @@ linux/clacks-server/ClacksServer.i: linux/clacks-server/ClacksServer.cpp.i
 
 # target to preprocess a source file
 linux/clacks-server/ClacksServer.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/clacks-server/ClacksServer.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/clacks-server/ClacksServer.cpp.i
 .PHONY : linux/clacks-server/ClacksServer.cpp.i
 
 linux/clacks-server/ClacksServer.s: linux/clacks-server/ClacksServer.cpp.s
@@ -803,7 +803,7 @@ linux/clacks-server/ClacksServer.s: linux/clacks-server/ClacksServer.cpp.s
 
 # target to generate assembly for a file
 linux/clacks-server/ClacksServer.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/clacks-server/ClacksServer.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/clacks-server/ClacksServer.cpp.s
 .PHONY : linux/clacks-server/ClacksServer.cpp.s
 
 linux/main_dedicated.o: linux/main_dedicated.cpp.o
@@ -812,7 +812,7 @@ linux/main_dedicated.o: linux/main_dedicated.cpp.o
 
 # target to build an object file
 linux/main_dedicated.cpp.o:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/main_dedicated.cpp.o
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/main_dedicated.cpp.o
 .PHONY : linux/main_dedicated.cpp.o
 
 linux/main_dedicated.i: linux/main_dedicated.cpp.i
@@ -821,7 +821,7 @@ linux/main_dedicated.i: linux/main_dedicated.cpp.i
 
 # target to preprocess a source file
 linux/main_dedicated.cpp.i:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/main_dedicated.cpp.i
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/main_dedicated.cpp.i
 .PHONY : linux/main_dedicated.cpp.i
 
 linux/main_dedicated.s: linux/main_dedicated.cpp.s
@@ -830,7 +830,7 @@ linux/main_dedicated.s: linux/main_dedicated.cpp.s
 
 # target to generate assembly for a file
 linux/main_dedicated.cpp.s:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/main_dedicated.cpp.s
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(MAKE) $(MAKESILENT) -f handheld/src-server/CMakeFiles/Minecraft.Server.dir/build.make handheld/src-server/CMakeFiles/Minecraft.Server.dir/linux/main_dedicated.cpp.s
 .PHONY : linux/main_dedicated.cpp.s
 
 # Help Target
@@ -928,6 +928,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

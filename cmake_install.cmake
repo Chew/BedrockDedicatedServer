@@ -1,8 +1,8 @@
-# Install script for directory: /home/mcbuild/VstsAgent/work/158/s/handheld/src-server
+# Install script for directory: /home/mcbuild/VstsAgent/work/143/s/handheld/src-server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public/handheld/src-external/grpc")
+  set(CMAKE_INSTALL_PREFIX "/home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public/handheld/src-external/grpc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlinux_x64_publicx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/home/mcbuild/VstsAgent/work/158/s/build_linux_x64_public/handheld/src-server/" REGEX "/[^/]*\\/resource\\_packs\\/chemistry\\/texts[^/]*$" EXCLUDE REGEX "/[^/]*\\/CMakeFiles[^/]*$" EXCLUDE REGEX "(.exp$|.ilk$|.lib$|_full_symbols.pdb$|_public_symbols.pdb$)" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/home/mcbuild/VstsAgent/work/143/s/build_linux_x64_public/handheld/src-server/" REGEX "/[^/]*\\/resource\\_packs\\/chemistry\\/texts[^/]*$" EXCLUDE REGEX "/[^/]*\\/CMakeFiles[^/]*$" EXCLUDE REGEX "(.exp$|.ilk$|.lib$|_full_symbols.pdb$|_public_symbols.pdb$)" EXCLUDE)
 endif()
 
