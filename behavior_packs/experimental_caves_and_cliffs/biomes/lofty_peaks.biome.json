@@ -29,6 +29,7 @@
         "sea_material": "minecraft:ice"
       },
       "mountains": {},
+      "monster": {},
       "overworld": {}
     }
   }

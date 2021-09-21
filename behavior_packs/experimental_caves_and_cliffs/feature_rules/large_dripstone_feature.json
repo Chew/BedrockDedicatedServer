@@ -1,15 +1,15 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.16.0",
   "minecraft:feature_rules": {
     "description": {
       "identifier": "minecraft:large_dripstone_feature",
       "places_feature": "minecraft:large_dripstone_feature"
     },
     "conditions": {
-      "placement_pass": "surface_pass",
+      "placement_pass": "after_surface_pass",
       "minecraft:biome_filter": [
         {
-          "test": "has_biome_tag", "operator": "==", "value": "dripstone"
+          "test": "has_biome_tag", "operator": "==", "value": "dripstone_caves"
         }
       ]
     },
@@ -21,7 +21,7 @@
       },
       "y": {
         "distribution": "uniform",
-        "extent": [ 0, 128 ]
+        "extent": [ -64, 63 ]
       },
       "z": {
         "distribution": "uniform",

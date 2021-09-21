@@ -23,7 +23,8 @@
 
       "caves": {},
       "overworld": {},
-      "dripstone": {}
+      "dripstone_caves": {},
+      "monster": {}
     }
   }
 }

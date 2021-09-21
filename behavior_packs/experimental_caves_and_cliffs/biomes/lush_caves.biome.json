@@ -23,7 +23,8 @@
 
       "caves": {},
       "lush_caves": {},
-      "overworld": {}
+      "overworld": {},
+      "monster": {}
     }
   }
 }
